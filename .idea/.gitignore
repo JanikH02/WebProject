@@ -1,0 +1,49 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+
+# Logs
+logs/
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.swp
+
+# IDE files
+.vscode/
+.idea/
+
+# Dependency directories
+bower_components/
+
+# Environment variables
+.env
+
+# SASS/SCSS cache
+.sass-cache/
+
+# Coverage directories
+coverage/
+
+# Compiled output
+*.out
+*.min.js
+*.min.css
+
+# Temporary lock files
+package-lock.json
+yarn.lock
+
+# GitHub Pages
+public/
