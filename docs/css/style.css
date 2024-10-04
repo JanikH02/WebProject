@@ -1,0 +1,232 @@
+/*----------General--------------------*/
+:root {
+    --containerColor: linear-gradient(0deg, #556e6e 0%, #7b87a6 100%);
+}
+
+body {
+    font-family: sans-serif, Arial;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: #444a58;
+    color: white;
+    cursor: default;
+}
+
+.content {
+    height: 93vh;
+    width: 100vw;
+    margin: 0;
+}
+
+header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--containerColor);
+    height: 7vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.titel, .titel:hover {
+    cursor: pointer;
+    margin: 0 0 0 3%;
+    font-size: 6vh;
+}
+
+.profilePic{
+    background-color: #3aec0b;
+    height: 6vh;
+    width: 6vh;
+    margin: 0 3% 0 0;
+    border-radius: 50%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/*------------------Nice Animations--------------------------------*/
+
+@keyframes fadeDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+}
+
+@keyframes shakeRotate {
+    0%,
+    100% {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+    }
+
+    10% {
+        transform: rotate(8deg);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: rotate(-8deg);
+    }
+
+    90% {
+        transform: rotate(8deg);
+    }
+}
+
+/*----------Login---------------------------*/
+
+#contentLogin, .loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titelLogin {
+    font-size: 10vh;
+}
+
+.fadeUpLogin {
+    animation: fadeUp 2s ease 0s 1 alternate forwards;
+}
+
+.fadeDownLogin {
+    animation: fadeDown 2s ease 0s 1 alternate forwards;
+}
+
+.loginContainer {
+    width: 40%;
+    background: var(--containerColor);
+    border-radius: 10px;
+}
+
+.loginContainer form {
+    width: 90%;
+}
+
+.loginContainer button {
+    width: 100%;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: #46d722;
+    padding: 1%;
+}
+
+.loginContainer button:hover {
+    cursor: pointer;
+    background-color: #3aec0b;
+}
+
+.loginContainer input {
+    width: 97%;
+    padding: 1%;
+    border-radius: 10px;
+    border-color: transparent;
+    background: #444a58;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*------------------Dashboard------------------------*/
+
+#contentDashboard {
+    display: grid;
+    grid-template-rows: 43% 43%;
+    grid-template-columns: 21.25% 21.25% 21.25% 21.25%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-template-areas:
+    "appointment calendar chats chats"
+    "appointment calendar overview overview";
+}
+
+#appointment, #appointment:hover {
+    cursor: pointer;
+    display: grid;
+    place-items: start center;
+    margin: 0;
+    background: var(--containerColor);
+    grid-area: appointment;
+    border-radius: 10px;
+}
+
+#calendar, #calendar:hover {
+    cursor: pointer;
+    display: grid;
+    place-items: start center;
+    margin: 0;
+    background: var(--containerColor);
+    grid-area: calendar;
+    border-radius: 10px;
+}
+
+#chats, #chats:hover {
+    cursor: pointer;
+    display: grid;
+    place-items: start center;
+    margin: 0;
+    background: var(--containerColor);
+    grid-area: chats;
+    border-radius: 10px;
+}
+
+#overview, #overview:hover {
+    cursor: pointer;
+    display: grid;
+    place-items: start center;
+    margin: 0;
+    background: var(--containerColor);
+    grid-area: overview;
+    border-radius: 10px;
+}
+
+/*-----------------------Overview-------------------------------*/
+#contentOverview{
+    display: grid;
+}
+
+#semester{
+
+}
+#moduleAdder{
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 95%;
+}
+
+

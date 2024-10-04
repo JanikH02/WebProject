@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
+<div class="content" id="contentLogin">
+    <h1 class="titel" id="titelLogin">
+        TITEL
+    </h1>
+    <div class="loginContainer" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <label for="username">Benutzername:</label>
+            <input type="text" id="username" name="username" placeholder="Benutzername" required>
+
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" placeholder="Passwort" required>
+
+            <button type="submit">Einloggen</button>
+        </form>
+        <p id="message"></p>
+    </div>
+</div>
 
 </body>
 </html>
