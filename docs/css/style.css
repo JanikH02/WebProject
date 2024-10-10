@@ -1,6 +1,8 @@
 /*----------General--------------------*/
 :root {
     --containerColor: linear-gradient(0deg, #556e6e 0%, #7b87a6 100%);
+    --randomTop: 0;
+    --randomLeft: 0;
 }
 
 body {
@@ -8,12 +10,12 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
-    background-color: #444a58;
     color: white;
     cursor: default;
 }
 
 .content {
+    background-color: #444a58;
     height: 93vh;
     width: 100vw;
     margin: 0;
@@ -35,14 +37,15 @@ header {
     font-size: 6vh;
 }
 
-.profilePic{
+.profilePic {
     background-color: #3aec0b;
     height: 6vh;
     width: 6vh;
     margin: 0 3% 0 0;
     border-radius: 50%;
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -215,18 +218,41 @@ img{
 }
 
 /*-----------------------Overview-------------------------------*/
-#contentOverview{
-    display: grid;
+#contentOverview {
 }
 
-#semester{
-
+#semester {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-#moduleAdder{
+
+.module {
+    position: absolute;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#moduleAdder {
     margin: 0;
     position: absolute;
     top: 95%;
     left: 95%;
+}
+
+.clickSomewhere{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: bold;
+    background-color: black;
+    opacity: 0.5;
 }
 
 
