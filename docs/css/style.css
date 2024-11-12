@@ -270,4 +270,12 @@ img {
     opacity: 0.5;
 }
 
+/*-----------------------------------------------Detailed Overview-----------------------------------------*/
+#moduleID{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 

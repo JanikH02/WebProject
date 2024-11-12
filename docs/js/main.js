@@ -46,11 +46,14 @@ function addModule(overviewElement) {
         let mouseX = event.clientX;
         let mouseY = event.clientY;
         addCoordinates((mouseX / window.innerWidth) * 100, (+mouseY / window.innerHeight) * 100);
+
         const module = document.createElement("div");
         document.getElementById("contentOverview").appendChild(module);
         module.classList.add("module");
-        module.id = `modul ${moduleCounter}`;
-        module.innerText = `modul ${moduleCounter}`;
+        module.id = `modul${moduleCounter}`;
+        module.innerText = `modul${moduleCounter}`;
+
+
         let modules = document.querySelectorAll(".module");
         if (moduleCounter < modules.length) {
             let x = coordinates.at(moduleCounter).x;
@@ -59,15 +62,18 @@ function addModule(overviewElement) {
             modules.item(moduleCounter).style.top = `${y}%`;
             moduleCounter++;
         }
+        module.addEventListener("click",() => detailedModule(module));
         clickSomewhere.remove()
     });
-
-
 }
 
-// document.addEventListener("click", function (event) {
-//
-// });
+function detailedModule(module){
+    window.location.href = `http://localhost:63342/WebProject/docs/detailedOverview.html?module_id=${module.id}`;
+  //  const urlParams = new URLSearchParams(window.location.search);
+  //  const moduleId = urlParams.get("module_id");
+    const moduleTitle = document.getElementById("moduleID")
+    moduleTitle.innerText = "test";
+}
 
 class Coordinate {
     constructor(x, y) {
