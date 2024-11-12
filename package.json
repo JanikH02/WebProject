@@ -1,0 +1,20 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JanikH02/WebProject.git"
+  },
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.1",
+    "sql.js": "^1.11.0",
+    "sqlite3": "^5.1.7"
+  }
+}

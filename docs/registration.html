@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="content" id="contentRegistration">
+    <h1 class="titel" id="titelRegistration">
+        TITEL
+    </h1>
+    <div class="loginContainer" id="registrationContainer">
+        <h2>Login</h2>
+        <form id="registrationForm" onsubmit="handleRegistration(event)">
+            <label for="mailTF">E-Mail:</label>
+            <input type="text" id="mailTF" name="mail" placeholder="E-Mail" required>
+
+            <label class="halfSizeTF" for="firstnameTF">Firstname:</label>
+            <input class="halfSizeTF" type="text" id="firstnameTF" name="firstname" placeholder="Firstname" required>
+
+            <label class="halfSizeTF" for="surnameTF">Surname:</label>
+            <input class="halfSizeTF" type="text" id="surnameTF" name="surname" placeholder="Surname" required>
+
+            <label class="halfSizeTF" for="ageTF">Age:</label>
+            <input class="halfSizeTF" type="text" id="ageTF" name="age" placeholder="age" required>
+
+            <label class="halfSizeTF" for="semesterTF">Semester:</label>
+            <input class="halfSizeTF" type="text" id="semesterTF" name="semester" placeholder="semester" required>
+
+            <label for="passwordTF">Passwort:</label>
+            <input  type="password" id="passwordTF" name="password" placeholder="Passwort" required>
+
+            <button type="submit">Register</button>
+        </form>
+        <p id="message"></p>
+    </div>
+</div>
+</body>
+</html>

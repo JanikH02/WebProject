@@ -3,6 +3,7 @@
     --containerColor: linear-gradient(0deg, #556e6e 0%, #7b87a6 100%);
     --randomTop: 0;
     --randomLeft: 0;
+    background-color: #444a58;
 }
 
 body {
@@ -120,6 +121,7 @@ img {
 
 #titelLogin {
     font-size: 10vh;
+    margin: 0;
 }
 
 .fadeUpLogin {
@@ -162,6 +164,19 @@ img {
     color: white;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+/*------------------Registration---------------------*/
+#contentRegistration {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titelRegistration {
+    font-size: 10vh;
+    margin: 0;
 }
 
 /*------------------Dashboard------------------------*/
